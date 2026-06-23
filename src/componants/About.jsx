@@ -41,8 +41,9 @@ function About() {
           >
             <div className="rounded-2xl p-8">
               <h3 className="text-2xl font-semibold mb-6">My Journey</h3>
-              <p className="text-gray-300 mb-6">I'm a passionate full-stack developer with over 5 years of experience creating digital solutions for businesses around the world. My journey started with basic HTML/CSS websites and has evolved into building complex web applications with modern frameworks.</p>
-                <p className="text-gray-300 mb-12"> When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through tech blogs and tutorials. I believe in continuous learning and pushing the boundaries of what's possible on the web. </p>
+              <p className="text-gray-300 mb-6">
+               I'm a passionate React developer and MCA graduate who enjoys building modern, responsive, and user-friendly web applications. My journey started with learning HTML, CSS, and JavaScript, and gradually evolved into creating dynamic applications using React, Redux Toolkit, Tailwind CSS, and REST APIs. I love transforming ideas into interactive digital experiences and writing clean, maintainable code.</p>
+                <p className="text-gray-300 mb-12">As I continue to grow, I'm expanding my expertise into full-stack development by learning technologies like Node.js, Express, and databases. I'm driven by curiosity and a commitment to continuous learning, always exploring new tools and best practices to build scalable and impactful solutions. When I'm not coding, you'll find me working on personal projects and staying up to date with the latest trends in web development. </p>
            
               {/* cards */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

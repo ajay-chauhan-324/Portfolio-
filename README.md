@@ -1,16 +1,111 @@
-# React + Vite
+# 🌟 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! This project showcases my skills, projects, education, and experience as a Full Stack Developer.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 Portfolio Website: https://portfolio-swart-gamma-40.vercel.app/
 
-## React Compiler
+## 👨‍💻 About Me
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Hi, I'm **Ajay Chauhan**, an MCA graduate and passionate Full Stack Developer. I enjoy building modern, responsive, and user-friendly web applications using the latest technologies.
 
-## Expanding the ESLint configuration
+I specialize in creating interactive frontend interfaces and scalable backend solutions. My goal is to continuously learn new technologies and contribute to impactful projects.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+* Tailwind CSS
+
+
+### Tools & Platforms
+
+* Git & GitHub
+* VS Code
+* Vercel
+* Netlify
+
+## ✨ Features
+
+* Fully Responsive Design
+* Modern UI/UX
+* Smooth Animations
+* Project Showcase
+* Skills Section
+* About Me Section
+* Contact Form
+* Fast Performance
+* Mobile Friendly
+
+## 📂 Project Structure
+
+```bash
+src/
+├── assets/
+├── components/
+├── pages/
+├── hooks/
+├── styles/
+└── App.js
+```
+
+## 📸 Projects Included
+
+* E-Commerce Website
+* Portfolio Website
+* Task Management Application
+* React Dashboard
+* Full Stack Web Applications
+
+## 📞 Contact
+
+* Email: [your-email@example.com](mailto:your-email@example.com)
+* LinkedIn: https://linkedin.com/in/your-profile
+* GitHub: https://github.com/your-username
+
+## 🔧 Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/ajay-chauhan-324/portfolio.git
+```
+
+2. Navigate to the project folder
+
+```bash
+cd portfolio
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Run the development server
+
+```bash
+npm run dev
+```
+
+## 🌱 Future Improvements
+
+* Dark/Light Theme Toggle
+* Blog Section
+* Project Filtering
+* Admin Dashboard
+* Performance Optimization
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+⭐ If you like this project, don't forget to star the repository!

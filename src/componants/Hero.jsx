@@ -1,6 +1,6 @@
 import React from "react";
 import { assets } from "../../assets/assets";
-import resume from "../assets/resume.pdf";
+
 import { motion } from "framer-motion";
 import { FaEye, FaDownload } from "react-icons/fa";
 
@@ -36,7 +36,7 @@ function Hero() {
           <div className="flex flex-wrap justify-center md:justify-start gap-4">
             
             <a
-              href={resume}
+              href="/RESUME.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple to-pink-500 rounded-lg font-medium shadow-lg hover:scale-105 transition-all duration-300"
@@ -46,7 +46,7 @@ function Hero() {
             </a>
 
             <a
-              href={resume}
+              href="/RESUME.pdf"
               download="Ajay_Chauhan_Resume.pdf"
               className="flex items-center gap-2 px-6 py-3 border-2 border-purple rounded-lg font-medium hover:bg-purple/20 hover:scale-105 transition-all duration-300"
             >

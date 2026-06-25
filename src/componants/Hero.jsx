@@ -1,6 +1,6 @@
 import React from "react";
 import { assets } from "../../assets/assets";
-import resume from "../../assets/resume.pdf";
+import resume from "../assets/resume.pdf";
 import { motion } from "framer-motion";
 import { FaEye, FaDownload } from "react-icons/fa";
 

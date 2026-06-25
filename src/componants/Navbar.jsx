@@ -1,72 +1,88 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
+
 function Navbar() {
   const links = [
-    "Home",
-    "Skills",
-    "Projects",
-    "Experience",
-    "Contact",
-    "About",
+    "home",
+    "skills",
+    "projects",
+    "experience",
+    "contact",
+    "about",
   ];
 
   const [showmenu, setShowmenu] = useState(false);
+
   return (
-    <nav className="fixed w-full z-50 bg-dark-100/90 backdrop-blur-sm py-4 px-8 shadow-lg">
-      <div className=" container mx-auto flex justify-between items-center">
-        <div>
-          <a href="#" className=" text-3xl font-bold text-white">
-            Ajay
-            <span className="text-purple">Chauhan</span>
-            <div className=" w-4 h-4 bg-purple rounded-full"></div>
-          </a>
+    <nav className="fixed top-0 left-0 w-full z-50 bg-dark-100/90 backdrop-blur-md shadow-lg">
+      <div className="container mx-auto px-6">
+        <div className="flex justify-between items-center h-20">
+          {/* Logo */}
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            offset={-80}
+            className="cursor-pointer flex items-center gap-2"
+          >
+            <h1 className="text-3xl font-bold text-white">
+              Ajay <span className="text-purple">Chauhan</span>
+            </h1>
+            <div className="w-3 h-3 bg-purple rounded-full animate-pulse"></div>
+          </Link>
+
+          {/* Desktop Menu */}
+          <div className="hidden md:flex gap-8">
+            {links.map((link) => (
+              <Link
+                key={link}
+                to={link}
+                smooth={true}
+                spy={true}
+                duration={500}
+                offset={-80}
+                activeClass="text-purple"
+                className="cursor-pointer capitalize text-white/80 hover:text-purple transition duration-300"
+              >
+                {link}
+              </Link>
+            ))}
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setShowmenu(!showmenu)}
+            className="md:hidden text-white text-2xl"
+          >
+            {showmenu ? <FaXmark /> : <FaBars />}
+          </button>
         </div>
-        <div className="hidden md:flex space-x-10">
-          {links.map((link) => (
-            <a
-              key={link}
-              href={`#${link.toLowerCase()}`}
-              className="relative text-white/80 transition duration-300 hover:text-purple group"
-            >
-              <span>{link}</span>
-              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full"></span>
-            </a>
-          ))}
-        </div>
-        {/* mobile buttons */}
-        <div className="md:hidden">
-          {showmenu ? (
-            <FaXmark
-              onClick={() => setShowmenu(!showmenu)}
-              className="text-2xl cursor-pointer"
-            />
-          ) : (
-            <FaBars
-              onClick={() => setShowmenu(!showmenu)}
-              className="text-2xl cursor-pointer"
-            />
-          )}
+
+        {/* Mobile Menu */}
+        <div
+          className={`md:hidden overflow-hidden transition-all duration-300 ${
+            showmenu ? "max-h-96 pb-4" : "max-h-0"
+          }`}
+        >
+          <div className="bg-dark-300 rounded-xl p-4 flex flex-col gap-4">
+            {links.map((link) => (
+              <Link
+                key={link}
+                to={link}
+                smooth={true}
+                duration={500}
+                offset={-80}
+                onClick={() => setShowmenu(false)}
+                className="cursor-pointer capitalize py-3 text-center rounded-lg text-white/80 hover:bg-purple hover:text-white transition duration-300"
+              >
+                {link}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
-
-      {/* mobile menus */}
-
-      {showmenu && (
-        <div className="md:hidden mt-4 bg-dark-300 h-screen rounded-lg p-4 flex flex-col space-y-4 text-center justify-center">
-          {links.map((link) => (
-            <a
-              onClick={() => setShowmenu(!showmenu)}
-              key={link}
-              href={`#${link.toLowerCase()}`}
-              className="relative text-white/80 transition duration-300 hover:text-purple group"
-            >
-              <span>{link}</span>
-              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full"></span>
-            </a>
-          ))}
-        </div>
-      )}
     </nav>
   );
 }

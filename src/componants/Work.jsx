@@ -9,7 +9,7 @@ function Work() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: false , amount:0.2 }}
-            id="Projects"
+            id="experience"
             className='py-20 bg-dark-200'
           >
             <div className='container mx-auto px-6'>

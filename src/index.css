@@ -6,6 +6,9 @@
 * {
   font-family: Saira, sans-serif;
 }
+body {
+  overflow-x: hidden;
+}
 
 @theme {
   --color-dark-100: #1a1a1a;

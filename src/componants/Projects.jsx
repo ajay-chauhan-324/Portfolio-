@@ -5,12 +5,18 @@ import ProjectCard from './ProjectCard';
 import { FaArrowRight } from 'react-icons/fa';
 function Projects() {
   return (
- <motion.div 
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: "easeOut" }}
-      viewport={{ once: false , amount:0.2 }}
-      id="Projects"
+//  <motion.div 
+//       initial={{ opacity: 0, y: 50 }}
+//       whileInView={{ opacity: 1, y: 0 }}
+//       transition={{ duration: 1, ease: "easeOut" }}
+//       viewport={{ once: false , amount:0.2 }}
+//       id="Projects"
+<motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: true }}
+  id='projects'
       className='py-20 bg-dark-200'
     >
         <div className=' container mx-auto px-6 '>

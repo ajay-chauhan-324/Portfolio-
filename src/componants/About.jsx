@@ -11,7 +11,7 @@ function About() {
       id="about"
       className="py-20 bg-dark-200"
     >
-      <div className="container mx-0 px-6">
+      <div className="container mx-auto px-6">
         {/* HEadings */}
         <h2 className="text-3xl font-bold text-center mb-4 ">
           About
@@ -22,13 +22,13 @@ function About() {
         </p>
         {/* img plus my journey */}
         <div className="flex flex-col  md:flex-row items-center gap-12">
-          <div className=" md:1/2 rounded-2xl overflow-hidden">
+          <div className=" md:w-1/2 rounded-2xl overflow-hidden">
             <motion.img
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
               viewport={{ once: false,amount:0.2}}
-              className="w-full h-full object-cove   "
+              className="w-full h-full object-cover  "
               src={assets.profileImg} alt="Profile"
             />
           </div>

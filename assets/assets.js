@@ -1,4 +1,4 @@
-import { FaLightbulb, FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot } from 'react-icons/fa';
+import { FaLightbulb, FaPaintBrush, FaCode,FaCheckCircle, FaReact, FaServer,  FaPalette, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot } from 'react-icons/fa';
 
 import profileImg from '../assets/profile.avif.png';
 import projectImg1 from '../assets/project1.avif';
@@ -38,40 +38,81 @@ export const aboutInfo = [
 
 export const skills = [
   {
-    title: 'Frontend Development',
+    title: "Frontend Development",
     icon: FaReact,
-    description: 'Building responsive and interactive user interfaces with modern frameworks.',
-    tags: ['React', 'Vue.js', 'Angular', 'TypeScript']
+    description:
+      "Building modern, responsive, and interactive web applications with React and contemporary frontend technologies.",
+    tags: [
+      "React.js",
+      "Redux Toolkit",
+      "React Router",
+      "Tailwind CSS",
+      "Framer Motion"
+    ]
   },
   {
-    title: 'Backend Development',
+    title: "UI Development",
+    icon: FaPalette,
+    description:
+      "Creating accessible, reusable, and visually appealing user interfaces with modern component libraries.",
+    tags: [
+      "shadcn/ui",
+      "Headless UI",
+      "Radix UI",
+      "Responsive Design",
+      "Reusable Components"
+    ]
+  },
+  {
+    title: "API Integration",
     icon: FaServer,
-    description: 'Creating robust server-side applications and RESTful APIs.',
-    tags: ['Node.js', 'Express', 'Django', 'Laravel']
+    description:
+      "Connecting frontend applications with REST APIs and efficiently managing client and server state.",
+    tags: [
+      "REST APIs",
+      "Axios",
+      "TanStack Query",
+      "JSON",
+      "API Integration"
+    ]
   },
   {
-    title: 'Database Management',
+    title: "Backend Development",
     icon: FaDatabase,
-    description: 'Designing and optimizing databases for performance and scalability.',
-    tags: ['MongoDB', 'PostgreSQL', 'MySQL', 'Firebase']
+    description:
+      "Developing scalable backend services and REST APIs with modern web technologies.",
+    tags: [
+      "Node.js",
+      "Express.js",
+      "Django",
+      "Django REST Framework",
+      "MySQL"
+    ]
   },
   {
-    title: 'Mobile Development',
-    icon: FaMobileAlt,
-    description: 'Building cross-platform mobile applications with modern tools.',
-    tags: ['React Native', 'Flutter', 'Ionic', 'Swift']
+    title: "Forms & Validation",
+    icon: FaCheckCircle,
+    description:
+      "Building secure, user-friendly forms with validation and improved user experience.",
+    tags: [
+      "React Hook Form",
+      "Zod",
+      "Form Validation",
+      "Authentication"
+    ]
   },
   {
-    title: 'Cloud & DevOps',
-    icon: FaCloud,
-    description: 'Deploying and managing applications in cloud environments.',
-    tags: ['AWS', 'Docker', 'Kubernetes', 'CI/CD']
-  },
-  {
-    title: 'Tools & Technologies',
+    title: "Tools & Workflow",
     icon: FaTools,
-    description: 'Essential tools and technologies I use in my development workflow.',
-    tags: ['Git & GitHub', 'Webpack', 'Figma', 'Jest']
+    description:
+      "Using modern development tools for version control, deployment, and efficient collaboration.",
+    tags: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Vercel",
+      "Netlify"
+    ]
   }
 ];
 
@@ -137,12 +178,12 @@ export const projects = [
 
 export const workData = [
   {
-    role: "Full Stack Developer",
-    company: "artROOT",
-    duration: "2026 - Present",
-    description:
-      "Leading frontend development for enterprise clients, implementing modern frameworks, and mentoring junior developers.",
-    color: "purple"
+    role: "Frontend Developer",
+  company: "Elite Code Technologies",
+  duration: "Jan 2026 - Jun 2026",
+  description:
+    "Developed responsive and user-friendly web interfaces using React.js, JavaScript, HTML, CSS, and Tailwind CSS. Collaborated with senior developers to implement UI components, integrated REST APIs, fixed bugs, optimized application performance, and followed Git-based version control in an Agile development environment.",
+  color: "purple"
   },
   // {
   //   role: "Web Developer",

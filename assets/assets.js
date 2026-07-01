@@ -180,7 +180,7 @@ export const workData = [
   {
     role: "Frontend Developer",
   company: "Elite Code Technologies",
-  duration: "Jan 2026 - Jun 2026",
+  duration: "Jan 2026 - Jun 2026 (6 months)",
   description:
     "Developed responsive and user-friendly web interfaces using React.js, JavaScript, HTML, CSS, and Tailwind CSS. Collaborated with senior developers to implement UI components, integrated REST APIs, fixed bugs, optimized application performance, and followed Git-based version control in an Agile development environment.",
   color: "purple"
